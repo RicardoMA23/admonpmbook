@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site">
+    <div class="top-banner">TIENDA</div>
+
+    <header class="header">
+      <button class="icon-btn" id="menuBtn">☰</button>
+
+      <div class="header-right">
+        <div class="search-box" id="searchBox">
+          <input type="text" id="searchInput" placeholder="Buscar producto, categoría o color">
+          <button class="clear-search-btn" id="clearSearchBtn">✕</button>
+        </div>
+        <button class="icon-btn" id="searchToggle">⌕</button>
+        <button class="icon-btn" id="cartToggle">👜</button>
+      </div>
+    </header>
+
+    <div class="menu-panel hidden" id="menuPanel">
+      <div class="menu-panel-header">
+        <div class="menu-header-content">
+          <span class="menu-icon">👗</span>
+          <span>Menú</span>
+        </div>
+        <button id="closeMenuBtn">✕</button>
+      </div>
+
+      <div class="menu-panel-content">
+        <div class="menu-column">
+          <h4>Categorías</h4>
+          <button class="menu-link" data-menu-cat="Todas">Todas</button>
+          <button class="menu-link" data-menu-cat="Vestidos">Vestidos</button>
+          <button class="menu-link" data-menu-cat="Blusas">Blusas</button>
+          <button class="menu-link" data-menu-cat="Camisas">Camisas</button>
+          <button class="menu-link" data-menu-cat="Bolsas">Bolsas</button>
+        </div>
+
+        <div class="menu-column">
+          <h4>Acciones</h4>
+          <button class="menu-action" id="menuOpenCart">Abrir bolsa</button>
+          <button class="menu-action" id="menuOpenChat">Abrir asistente</button>
+          <button class="menu-action" id="menuResetCatalog">Volver al inicio</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout">
+      <main class="main" id="mainContent">
+        <div class="categories" id="categories"></div>
+        <div class="product-grid" id="productGrid"></div>
+      </main>
+
+      <aside class="cart-panel hidden" id="cartPanel">
+        <div class="cart-header">
+          <span>Mi bolsa</span>
+          <button class="close-cart-btn" id="closeCartBtn">✕</button>
+        </div>
+        <div class="cart-content" id="cartContent"></div>
+      </aside>
+    </div>
+  </div>
+
+  <button class="chat-btn" id="openChatBtn">Chat</button>
+
+  <div class="chat-modal hidden" id="chatModal">
+    <div class="chat-window">
+      <div class="chat-header">
+        <span>Asistente</span>
+        <button id="closeChatBtn">✕</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="bot-message">
+          Hola. Puedo ayudarte a buscar productos del catálogo.
+        </div>
+      </div>
+
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="Escribe tu mensaje">
+        <button id="sendChatBtn">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
