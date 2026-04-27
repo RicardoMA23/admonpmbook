@@ -1,4 +1,4 @@
-const productos = [
+ const productos = [
   {
     id: "p1",
     nombre: "Vestido blanco",
@@ -43,6 +43,87 @@ const productos = [
     precio: 450,
     descripcion: "Camisa blanca de lino",
     imagen: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=900&auto=format&fit=crop"
+  },
+  {
+    id: "p6",
+    nombre: "Falda negra",
+    categoria: "Faldas",
+    color: "negro",
+    precio: 350,
+    descripcion: "Falda corta negra elegante",
+    imagen: "https://http2.mlstatic.com/D_708108-MLM95641109822_102025-O.jpg"
+  },
+  {
+    id: "p7",
+    nombre: "Pantalones azules",
+    categoria: "Pantalones",
+    color: "azul",
+    precio: 550,
+    descripcion: "Pantalones casuales azules",
+    imagen: "https://www.paviitaly.com/wp-content/uploads/09-G0007-a.jpg"
+  },
+  {
+    id: "p8",
+    nombre: "Blusa azul",
+    categoria: "Blusas",
+    color: "azul",
+    precio: 420,
+    descripcion: "Blusa azul de manga larga",
+    imagen: "https://bluhen.mx/cdn/shop/files/Blusa-Azul-Rey-Manga-Larga-Cordelia-1_jpg_1000x1000.webp?v=1702594833"
+  },
+  {
+    id: "p9",
+    nombre: "Vestido rojo",
+    categoria: "Vestidos",
+    color: "rojo",
+    precio: 500,
+    descripcion: "Vestido rojo de noche",
+    imagen: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=900&auto=format&fit=crop"
+  },
+  {
+    id: "p10",
+    nombre: "Chaqueta denim",
+    categoria: "Chaquetas",
+    color: "azul",
+    precio: 780,
+    descripcion: "Chaqueta de mezclilla estilo casual",
+    imagen: "https://images.unsplash.com/photo-1543076447-215ad9ba6923?q=80&w=900&auto=format&fit=crop"
+  },
+  {
+    id: "p11",
+    nombre: "Suéter beige",
+    categoria: "Suéteres",
+    color: "beige",
+    precio: 520,
+    descripcion: "Suéter tejido cómodo y cálido",
+    imagen: "https://image.hm.com/assets/hm/2e/cd/2ecd5268de4ec1c2c17d208537177abd7e3d58ac.jpg?imwidth=2160"
+  },
+  {
+    id: "p12",
+    nombre: "Short negro",
+    categoria: "Shorts",
+    color: "negro",
+    precio: 300,
+    descripcion: "Short casual negro de verano",
+    imagen: "https://http2.mlstatic.com/D_936036-CBT108540061853_032026-O.jpg"
+  },
+  {
+    id: "p13",
+    nombre: "Blazer gris",
+    categoria: "Blazers",
+    color: "gris",
+    precio: 950,
+    descripcion: "Blazer elegante para ocasiones formales",
+    imagen: "https://padre-santo.com/cdn/shop/files/Gris_Medio_2_OK.jpg?v=1746647968"
+  },
+  {
+    id: "p14",
+    nombre: "Tenis blancos",
+    categoria: "Calzado",
+    color: "blanco",
+    precio: 650,
+    descripcion: "Tenis cómodos para uso diario",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMP2h_N-dYRxozJYkQaL7DZ0g4BHPMq974Jg&s"
   }
 ];
 
@@ -385,3 +466,5 @@ renderCategorias();
 renderProductos();
 renderCarrito();
 cerrarBolsa();
+
+
